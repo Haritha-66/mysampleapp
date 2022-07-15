@@ -5,7 +5,7 @@ Resources:
       Properties:
         TaskDefinition: "arn:aws:ecs:us-east-1:040684072081:task-definition/sampletask:1"
         LoadBalancerInfo:
-          ContainerName: "SampleApplicationName"
+          ContainerName: "Samplecontainer"
           ContainerPort: 80
 # Optional properties
         PlatformVersion: "LATEST"
