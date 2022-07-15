@@ -1,4 +1,4 @@
-FROM node:16
+FROM sampleapp:0.0
 
 
 
