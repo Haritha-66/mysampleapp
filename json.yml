@@ -5,20 +5,22 @@
             "TargetService": {
                 "Type": "AWS::ECS::Service",
                 "Properties": {
-                    "TaskDefinition": "arn:aws:ecs:us-east-1:111222333444:task-definition/my-task-definition-family-name:1",
+                    "TaskDefinition": "arn:aws:ecs:us-east-1:040684072081:task-definition/sampletask:1",
                     "LoadBalancerInfo": {
-                        "ContainerName": "SampleApplicationName",
+                        "ContainerName": "samplecontainer",
                         "ContainerPort": 80
                     },
                     "PlatformVersion": "LATEST",
                     "NetworkConfiguration": {
                         "AwsvpcConfiguration": {
                             "Subnets": [
-                                "subnet-1234abcd",
-                                "subnet-5678abcd"
+                                "subnet-0491c31b27432ad71",
+                                "subnet-092b71a11b9121b7b",
+                                "subnet-01b9d4fee7b17e4ec"
+                                
                             ],
                             "SecurityGroups": [
-                                "sg-12345678"
+                                " sg-0bd219a9eb2266575"
                             ],
                             "AssignPublicIp": "ENABLED"
                         }
